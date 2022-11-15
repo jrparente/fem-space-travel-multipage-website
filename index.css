@@ -10,12 +10,12 @@
   /*Font Size*/
   --fs-900: 5rem;
   --fs-800: 3.5rem;
-  --fs-700: 1.5rem;
-  --fs-600: 1rem;
-  --fs-500: 1.75rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-700: 1.75rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1rem;
+  --fs-400: 0.95rem;
+  --fs-300: 0.9rem;
+  --fs-200: 0.8rem;
 
   /*Font Family*/
   --ff-header: "Bellefair", serif;
@@ -307,7 +307,6 @@ for people that prefer not to see them */
 /* ------------------- */
 
 .header {
-  justify-content: space-between;
   align-items: center;
   position: relative;
   margin-top: var(--fs-400);
@@ -329,6 +328,10 @@ for people that prefer not to see them */
 /* ------------------- */
 .logo-wrapper {
   padding-inline: var(--fs-600);
+}
+
+.menu-wrapper {
+  margin-left: auto;
 }
 
 .menu {
@@ -409,7 +412,7 @@ for people that prefer not to see them */
   .menu {
     --gap: var(--fs-600);
     padding-top: var(--fs-900);
-    padding-left: var(--fs-600) !important;
+    padding-inline: var(--fs-600) !important;
     display: none;
     position: absolute;
     top: -1.125rem;
@@ -431,7 +434,7 @@ for people that prefer not to see them */
   .nav-toggle {
     background-color: transparent;
     border: none;
-    padding-inline-end: var(--fs-600);
+    padding-inline: var(--fs-600) !important;
     z-index: 999;
     position: relative;
   }
