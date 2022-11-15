@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./index.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header flex">
+      <div class="logo-wrapper">
+        <img src="./assets/shared/logo.svg" alt="Logo Space Travel Website">
+      </div>
+      <div class="menu-wrapper">
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img src="./assets/shared/icon-close.svg" alt="" aria-hidden="true" class="icon-close hide">
+          <img src="./assets/shared/icon-hamburger.svg" alt="" aria-hidden="true" class="icon-hamburguer">
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul role="list" class="menu flex" id="primary-navigation" aria-label="Primary">
+          <li>
+            <a href="./index.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light active"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">00</span> Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">01</span> Destination</a>
+          </li>
+          <li>
+            <a href="#" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">02</span> Crew</a>
+          </li>
+          <li>
+            <a href="#" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">03</span> Technology</a>
+          </li>
+        </ul>
+      </div>
+      <!--div.menu-wrapper-->
+    </div>
+  </header>
+  <main>
+    <section class="hero container grid flow" style="--flow-spacing:4rem">
+      <div class="hero-left flow" style="--flow-spacing:2rem">
+        <h1><span class="ff-subheader letter-spacing-lg fs-500 uppercase text-light">So, you want to travel to</span>
+          <br /><span class="ff-header fs-900 uppercase text-white">Space</span>
+        </h1>
+        <p>Let’s face it; if you want to go to space, you might as well genuinely go
+          to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <div class="hero-right">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          class="btn-main uppercase ff-header text-dark bg-white fs-700">Explore</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
