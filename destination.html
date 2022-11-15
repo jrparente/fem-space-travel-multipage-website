@@ -36,12 +36,13 @@
         </button>
         <ul role="list" class="menu flex" id="primary-navigation" aria-label="Primary">
           <li>
-            <a href="./index.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light active"
+            <a href="./index.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
               style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">00</span> Home
             </a>
           </li>
           <li>
-            <a href="./destination.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+            <a href="./destination.html"
+              class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light active"
               style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet">01</span> Destination</a>
           </li>
           <li>
@@ -58,19 +59,37 @@
     </div>
   </header>
   <main>
-    <section class="hero container grid flow" style="--flow-spacing:4rem">
-      <div class="hero-left flow" style="--flow-spacing:2rem">
-        <h1><span class="ff-subheader letter-spacing-md fs-500 uppercase text-light">So, you want to travel to</span>
-          <br /><span class="ff-header fs-900 uppercase text-white">Space</span>
-        </h1>
-        <p class="fs-400">Let’s face it; if you want to go to space, you might as well genuinely go
-          to
-          outer space and not hover kind of on the edge of it. Well sit back, and relax
-          because we’ll give you a truly out of this world experience!</p>
+    <section class="hero container grid flow" style="--flow-spacing:3rem">
+
+      <p class="ff-subheader fs-400 letter-spacing-md uppercase text-white"><span class="numbered-title">01</span> Pick
+        your destination</p>
+      <img src="./assets/destination/image-moon.png" alt="Travel to Space: destination moon" class="hero-img">
+
+      <div class="tabs flex">
+        <button class="button uppercase ff-subheader fs-400" style="--underline-gap:.2rem"
+          aria-selected="true">Moon</button>
+        <button class="uppercase ff-subheader fs-400" style="--underline-gap:.2rem" aria-selected="false">Mars</button>
+        <button class="uppercase ff-subheader fs-400" style="--underline-gap:.2rem"
+          aria-selected="false">Europa</button>
+        <button class="uppercase ff-subheader fs-400" style="--underline-gap:.2rem" aria-selected="false">Titan</button>
       </div>
-      <div class="hero-right">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          class="btn-main uppercase ff-header text-dark bg-white">Explore</a>
+    </section>
+
+    <section class="tab container grid flow" id="destination-tab-moon">
+      <h2 class="ff-header fs-800 uppercase text-white">Moon</h2>
+
+      <p class="fs-400"> See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+        regain perspective and come back refreshed. While you’re there, take in some history
+        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+      <div class="destination-details">
+        <p class="ff-subheader uppercase fs-400 letter-spacing-sm">Avg. distance</p>
+        <p class="ff-header text-white fs-700 uppercase">384,400 km</p>
+      </div>
+
+      <div>
+        <p class="ff-subheader uppercase fs-400 letter-spacing-sm">Est. travel time</p>
+        <p class="ff-header text-white fs-700 uppercase">3 days</p>
       </div>
     </section>
   </main>
