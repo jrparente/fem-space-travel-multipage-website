@@ -2,7 +2,6 @@ const navToggle = document.querySelector(".nav-toggle");
 const iconHamburguer = document.querySelector(".icon-hamburguer");
 const iconClose = document.querySelector(".icon-close");
 const primaryNav = document.querySelector("#primary-navigation");
-const header = document.querySelector("header");
 
 function handleClick(event) {
   event.preventDefault();
