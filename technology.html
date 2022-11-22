@@ -61,30 +61,34 @@
     </div>
   </header>
   <main>
-    <section class="hero crew-page container  flow">
+    <section class="hero tech-page container flow" style="--flow-spacing:2rem">
 
       <h1 class="ff-subheader fs-500 letter-spacing-md uppercase text-white"><span class="numbered-title"
           aria-hidden="true">03</span> Space launch 101</h1>
 
-      <div class="content grid flow">
-        <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Travel to Space: technology"
-          class="hero-img" id="hero-img">
+      <div class="tech-content grid" style="--gap:4rem">
 
-        <div class="grid flow">
+        <!-- Use srcset with sizes to display different images based on screen size -->
+        <img srcset="./assets/technology/image-launch-vehicle-portrait.jpg 515w, 
+            ./assets/technology/image-launch-vehicle-landscape.jpg 768w" sizes="(max-width: 798px) 768px,
+         515px" alt="Travel to Space: technology" id="hero-img">
+
+
+        <div class="tech-grid grid flow" style="--gap:2rem">
           <div class="numbered-indicators flex">
             <button class="button-tabs ff-header fs-600" aria-selected="true">1<span
-                class="sr-only">Vehicle</span></button>
+                class="sr-only">Launch-Vehicle</span></button>
             <button class="button-tabs ff-header fs-600" aria-selected="false">2<span
                 class="sr-only">Spaceport</span></button>
             <button class="button-tabs ff-header fs-600" aria-selected="false">3<span
                 class="sr-only">Space-Capsule</span></button>
           </div>
 
-          <article class="tab flow show" id="1vehicle-content" style="--flow-spacing:2rem">
+          <article class="tab flow show" id="1launch-vehicle-content" style="--flow-spacing:2rem">
             <h2 class="ff-header fs-500 uppercase text-white">The terminology...</h2>
             <p class="ff-header fs-700 uppercase text-white">Launch vehicle</p>
 
-            <p class="fs-500">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
+            <p class="fs-400">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a
               payload from Earth's surface to space, usually to Earth orbit or beyond. Our
               WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall,
               it's quite an awe-inspiring sight on the launch pad!</p>
@@ -94,7 +98,7 @@
             <h2 class="ff-header fs-500 uppercase text-white">The terminology...</h2>
             <p class="ff-header fs-700 uppercase text-white">Spaceport</p>
 
-            <p class="fs-500">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
+            <p class="fs-400">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft,
               by analogy to the seaport for ships or airport for aircraft. Based in the
               famous Cape Canaveral, our spaceport is ideally situated to take advantage
               of the Earth’s rotation for launch.</p>
@@ -104,7 +108,7 @@
             <h2 class="ff-header fs-500 uppercase text-white">The terminology...</h2>
             <p class="ff-header fs-600 uppercase text-white">Space capsule</p>
 
-            <p class="fs-500">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+            <p class="fs-400">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
               capsule to reenter the Earth's atmosphere without wings. Our capsule is where
               you'll spend your time during the flight. It includes a space gym, cinema,
               and plenty of other activities to keep you entertained.</p>
