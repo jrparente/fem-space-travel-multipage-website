@@ -27,15 +27,22 @@ function handleClick(e) {
   removeShow();
   // // change active tab
   this.setAttribute("aria-selected", true);
-  console.log(this.textContent.toLowerCase());
   // change tab content
-  const thisTabContent = document.querySelector(
-    `#${this.textContent.toLowerCase()}-content`
-  );
-  console.log(thisTabContent);
-  thisTabContent.classList.add("show");
-  // //change image
+
   const url = document.URL;
+  if (url.includes("technology")) {
+    const thisTabContent = document.querySelector(
+      `#\\3${this.textContent.toLowerCase()}-content`
+    );
+    thisTabContent.classList.add("show");
+  } else {
+    const thisTabContent = document.querySelector(
+      `#${this.textContent.toLowerCase()}-content`
+    );
+    thisTabContent.classList.add("show");
+  }
+
+  // //change image
   if (url.includes("destination")) {
     heroImg.setAttribute(
       "src",
@@ -47,7 +54,12 @@ function handleClick(e) {
       `./assets/crew/image-${this.textContent.toLowerCase()}.webp`
     );
   } else {
-    console.log("testing");
+    const imgPath = this.textContent.toLowerCase().slice(1);
+    heroImg.setAttribute(
+      "srcset",
+      `./assets/technology/image-${imgPath}-portrait.jpg 515w, 
+            ./assets/technology/image-${imgPath}-landscape.jpg 768w`
+    );
   }
 }
 
