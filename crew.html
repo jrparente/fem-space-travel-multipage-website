@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor Challenge | Space tourism website</title>
+
+  <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./index.css">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Barlow:ital,wght@0,400;0,700;1,400;1,700&family=Bellefair&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="crew">
+  <header>
+    <div class="header flex">
+      <div class="logo-wrapper"><a href="./index.html"><img src="./assets/shared/logo.svg"
+            alt="Logo Space Travel Website"></a>
+      </div>
+      <div class="menu-wrapper">
+        <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <img src="./assets/shared/icon-close.svg" alt="" aria-hidden="true" class="icon-close hide">
+          <img src="./assets/shared/icon-hamburger.svg" alt="" aria-hidden="true" class="icon-hamburguer">
+          <span class="sr-only">Menu</span>
+        </button>
+        <ul role="list" class="menu flex" id="primary-navigation" aria-label="Primary">
+          <li>
+            <a href="./index.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet" aria-hidden="true">00</span> Home
+            </a>
+          </li>
+          <li>
+            <a href="./destination.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light "
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet" aria-hidden="true">01</span>
+              Destination</a>
+          </li>
+          <li>
+            <a href="./crew.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light active"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet" aria-hidden="true">02</span> Crew</a>
+          </li>
+          <li>
+            <a href="./technology.html" class="menu-link ff-subheader fs-300 letter-spacing-md uppercase text-light"
+              style="--underline-gap:1.75rem"><span class="fw-700 hide-tablet" aria-hidden="true">03</span>
+              Technology</a>
+          </li>
+        </ul>
+      </div>
+      <!--div.menu-wrapper-->
+    </div>
+  </header>
+  <main>
+    <section class="hero crew-page container  flow">
+
+      <h1 class="ff-subheader fs-500 letter-spacing-md uppercase text-white"><span class="numbered-title"
+          aria-hidden="true">02</span> Meet your crew</h1>
+
+      <div class="crew-content flex flow">
+        <img src="./assets/crew/image-douglas-hurley.png" alt="Travel to Space: crew" class="hero-img" id="hero-img">
+
+        <div class="crew-flex flow">
+          <div class="dot-indicators flex">
+            <button class="button-tabs" aria-selected="true"><span class="sr-only">Douglas-Hurley</span></button>
+            <button class="button-tabs" aria-selected="false"><span class="sr-only">Anousheh-Ansari</span></button>
+            <button class="button-tabs" aria-selected="false"><span class="sr-only">Victor-Glover</span></button>
+            <button class="button-tabs" aria-selected="false"><span class="sr-only">Mark-Shuttleworth</span></button>
+          </div>
+
+          <article class="tab flow show" id="douglas-hurley-content" style="--flow-spacing:2rem">
+            <h2 class="ff-header fs-500 uppercase text-white">Commander</h2>
+            <p class="ff-header fs-700 uppercase text-white">Douglas Hurley</p>
+
+            <p class="fs-500">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+              and former NASA astronaut. He launched into space for the third time as
+              commander of Crew Dragon Demo-2.</p>
+          </article>
+
+          <article class="tab flow" id="anousheh-ansari-content" style="--flow-spacing:2rem">
+            <h2 class="ff-header fs-500 uppercase text-white">Flight Engineer</h2>
+            <p class="ff-header fs-700 uppercase text-white">Anousheh Ansari</p>
+
+            <p class="fs-500">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems.
+              Ansari was the fourth self-funded space tourist, the first self-funded woman to
+              fly to the ISS, and the first Iranian in space.</p>
+          </article>
+
+          <article class="tab flow" id="victor-glover-content" style="--flow-spacing:2rem">
+            <h2 class="ff-header fs-500 uppercase text-white">Pilot</h2>
+            <p class="ff-header fs-600 uppercase text-white">Victor Glover</p>
+
+            <p class="fs-500">Pilot on the first operational flight of the SpaceX Crew Dragon to the
+              International Space Station. Glover is a commander in the U.S. Navy where
+              he pilots an F/A-18.He was a crew member of Expedition 64, and served as a
+              station systems flight engineer.</p>
+          </article>
+
+          <article class="tab flow" id="mark-shuttleworth-content" style="--flow-spacing:2rem">
+            <h2 class="ff-header fs-500 uppercase text-white">Mission Specialist</h2>
+            <p class="ff-header fs-600 uppercase text-white">Mark Shuttleworth</p>
+
+            <p class="fs-500">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind
+              the Linux-based Ubuntu operating system. Shuttleworth became the first South
+              African to travel to space as a space tourist.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
